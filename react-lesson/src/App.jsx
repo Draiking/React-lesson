@@ -1,15 +1,8 @@
 import { useState } from "react";
 import "./App.css";
+import Header from './components/Header';
 
-function Header() {
-  return (
-    <header>
-      <h3>Result University</h3>
 
-      <span>тут будет время</span>
-    </header>
-  );
-}
 
 function App() {
   return (
