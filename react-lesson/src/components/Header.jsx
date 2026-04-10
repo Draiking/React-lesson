@@ -1,9 +1,11 @@
 export default function Header() {
+  const now = new Date();
+
   return (
     <header>
       <h3>Result University</h3>
 
-      <span>тут будет время</span>
+      <span>Время сейчас: {now.toLocaleTimeString()}</span>
     </header>
   );
 }
