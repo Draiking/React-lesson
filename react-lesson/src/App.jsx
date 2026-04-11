@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import { ways } from "./data";
 import { WayToTeach } from "./components/WayToTeach";
-import Button from "./components/button";
+import Button from "./components/button/button";
 
 
 function App() {
