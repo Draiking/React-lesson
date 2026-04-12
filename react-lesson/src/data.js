@@ -11,7 +11,7 @@ export const ways = [
 
 export const differences = [
   {
-    way: "покупайте у нас",
-    easy: "доступные цены",
+    way: 'покупайте у нас',
+    easy: 'доступные цены',
   },
 ];
