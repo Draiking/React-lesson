@@ -12,6 +12,8 @@ function App() {
     setContentType(type);
   }
 
+  let tabContent = null;
+
   return (
     <>
       <div>
@@ -29,13 +31,21 @@ function App() {
           </section>
           <section>
             <h3>Why?</h3>
-            <Button onClick={() => handleClick('way')}>Подтвердить</Button>
-            <Button>Подход</Button>
-            <Button onClick={() => handleClick('easy')}>
+            <Button
+              isActive={contentType === "way"}
+              onClick={() => handleClick("way")}
+            >
               Подтвердить
             </Button>
-            {contentType ? <p>{differences[contentType]}</p> : <p>Нажми на кнопку</p>}
-            
+            <Button>Подход</Button>
+            <Button
+              isActive={contentType === "easy"}
+              onClick={() => handleClick("easy")}
+            >
+              Подтвердить
+            </Button>
+            {!contentType && <p>Нажми на кнопку</p>}
+            {contentType && <p>{differences[contentType]}</p>}
           </section>
         </main>
       </div>
