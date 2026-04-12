@@ -20,7 +20,8 @@ function App() {
           </section>
           <section>
             <h3>Why?</h3>
-            <Button />
+            <Button>Подтвердить</Button>
+            <Button>Подход</Button>
           </section>
         </main>
       </div>
