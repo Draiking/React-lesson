@@ -9,7 +9,9 @@ export const ways = [
   },
 ];
 
-export const differences = {
-    way: 'покупайте у нас',
-    easy: 'доступные цены'
-}
+export const differences = [
+  {
+    way: "покупайте у нас",
+    easy: "доступные цены",
+  },
+];
